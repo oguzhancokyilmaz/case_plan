@@ -1,0 +1,223 @@
+{
+    "When action with table": {
+        "prefix": "action with table",
+        "body": [
+            "When action with table",
+            "\t| locator                                     | action  | value                          |",
+            "\t| #your-locator_name_from_BasePageObjects.js  | type    | text                           |",
+            "\t| #your-locator_name_from_BasePageObjects.js  | click   |                                |",
+            "\t| #your-locator_name_from_BasePageObjects.js  | select  | value of the option            |",
+            "\t| #your-locator_name_from_BasePageObjects.js  | verify  | text to verify                 |",
+            "\t| #your-locator_name_from_BasePageObjects.js  | scroll  |                                |",
+            "\t|                                             | wait    | ms wait time                   |",
+            "\t| #your-locator_name_from_BasePageObjects.js  | hover   |                                |",
+            "\t| #your-locator_name_from_BasePageObjects.js  | visible | 1 = visible / 0 = not visible  |"
+        ],
+        "description": "Use this step to perform multiple actions with a table. Replace locators and values as necessary. Also you can add more rows."
+    },
+    "open the site for specific environment": {
+        "prefix": "Given open the site 'qa' environment on 'Desktop'",
+        "body": [
+            "Given open the site for \"$qa\" environment on \"$Desktop\""
+        ],
+        "description": "Opens a specified site for the given environment. First parameter can take the values 'qa' or 'prod'. Second parameter can take 'Desktop' or 'Mobile Web'. You can manage the links on .env file"
+    },
+    "Click button": {
+        "prefix": "click 'example' button",
+        "body": [
+            "Given click \"$1example\" button"
+        ],
+        "description": "Clicks 'example' button on the page. 'example' parameter must be defined in BasePageObjects."
+    },
+    "Click selector": {
+        "prefix": "click '#your-locator' locator",
+        "body": [
+            "Given click \"#your-locator\" locator"
+        ],
+        "description": "Clicks 'example' selector on the page."
+    },
+    "Url check": {
+        "prefix": "url should be 'https://example.com/'",
+        "body": [
+            "Given url should be \"$https://example.com/\""
+        ],
+        "description": "Url must match the parameter."
+    },
+    "Url contains": {
+        "prefix": "url should contains 'sort=date_desc'",
+        "body": [
+            "Then url should contains \"$?example\""
+        ],
+        "description": "Url should contains the given parameter."
+    },
+    "Type with table": {
+        "prefix": "type with table",
+        "body": [
+            "When type with table",
+            "| locator                                        | value      |",
+            "| #your-locator_name_from_BasePageObjects.js     | text       |",
+            "| #your-locator_name_from_BasePageObjects.js     | text       |"
+        ],
+        "description": "Types into input fields specified in the table."
+    },
+    "add product to basket": {
+        "prefix": "add product to basket",
+        "body": [
+            "When add product to basket",
+            "\t| locator                                           | action | value               |",
+            "\t| #your-searchIcon_locator_from_BasePageObjects.js  | click  |                     |",
+            "\t| #your-searchBox_locator_from_BasePageObjects.js   | type   |   #product-name     |",
+        ],
+        "description": "Searches for the given #product-name and clicks on the first result. Then adds the first available size to the cart."
+    },
+    "Wait": {
+        "prefix": "wait 3 seconds",
+        "body": [
+            "Given wait 3 seconds"
+        ],
+        "description": "wait X seconds on the page. "
+    },
+    "click until not exist": {
+        "prefix": "click 'example' button until not exist",
+        "body": [
+            "When click \"example\" button until not exist"
+        ],
+        "description": "Clicks 'example' button on the page until not exist. 'example' parameter must be contain all delete icons"
+    },
+    "text check": {
+        "prefix": "should see 'text' in the '#your-locator' selector field",
+        "body": [
+            "Given should see \"text\" in the \"#your-locator\" selector field"
+        ],
+        "description": "'text' must match the value in the '#your-locator' field."
+    },
+    "text contains": {
+        "prefix": "should contains 'text' in the '#your-locator' selector field",
+        "body": [
+            "Given should contains \"text\" in the \"#your-locator\" selector field"
+        ],
+        "description": "'The value in the '#your-locator' element must contain the 'text' parameter"
+    },
+    "open url": {
+        "prefix": "open url 'https://example.com/' on 'Desktop'",
+        "body": [
+            "Given open url \"https://example.com/\" on \"Desktop\""
+        ],
+        "description": "'Open the website with given url. You can choose enviroment with 'Desktop' or 'Mobile Web'"
+    },
+    "Accept Cookies": {
+        "prefix": "accept cookies 'id'",
+        "body": [
+            "* accept cookies \"#accept-cookies-button-id\""
+        ],
+        "description": "As a parameter, write the id of the 'Accept Cookies' button's div."
+    },
+    "When twice click buttons until not exist": {
+        "prefix": "twice click buttons until not exist",
+        "body": [
+            "When twice click buttons until not exist",
+            "\t| locator                                     |",
+            "\t| #your-locator_name_from_BasePageObjects.js  |",
+            "\t| #your-locator_name_from_BasePageObjects.js  |",
+        ],
+        "description": "If the given first locator exists on the page, it will click the given first locator and then click the given second locator. This process will continue until the given first locator no longer exists on the page."
+    },
+    "Assertion from memory": {
+        "prefix": "should see '#Previously-set-variable-name' from memory in the '#your-locator' selector field",
+        "body": [
+            "Then should see \"${1:#previously-set-variable-name}\" from memory in the \"${2:#your-locator}\" selector field"
+        ],
+        "description": "Checks if the value in the previously set variable name matches the text in the given locator."
+    },
+    "Contains assertion from memory": {
+        "prefix": "should contains '#Previously-set-variable-name' from memory in the '#your-locator' selector field",
+        "body": [
+            "Then should contains \"${1:#previously-set-variable-name}\" from memory in the \"${2:#your-locator}\" selector field"
+        ],
+        "description": "Checks if the value in the previously set variable name contains in the text in the given locator."
+    },
+    "Type from memory": {
+        "prefix": "type '#previously-set-variable-name' from memory to the '#your-locator' selector field",
+        "body": [
+            "When type \"${1:#previously-set-variable-name}\" from memory to \"${2:#your-locator}\" selector field"
+        ],
+        "description": "Types the value from the previously set variable name into the given locator field."
+    },
+    "Select by label from memory": {
+        "prefix": "select by label '#previously-set-variable-name' from memory in the '#your-locator' selector field",
+        "body": [
+            "When select by label \"${1:#previously-set-variable-name}\" from memory in the \"${2:#your-locator}\" selector field"
+        ],
+        "description": "Selects the option by label from the previously set variable name in the given locator field."
+    },
+    "Click if exist button": {
+        "prefix": "click 'example' button if it is visible",
+        "body": [
+            "When click \"$1your-locator-from-basePageObjects.js\" button if it is visible"
+        ],
+        "description": "if it is visible, clicks 'example' button on the page."
+    },
+    "equal assertion two variable from memory": {
+        "prefix": "'#Previously-set-variable-name' from memory should equal '#Previously-set-variable-name' from memory",
+        "body": [
+            "Then \"${1:#previously-set-variable-name}\" from memory should equal \"${1:#previously-set-variable-name}\" from memory"
+        ],
+        "description": "Checks that two parameters previously seted and stored in memory are equal."
+    },
+    "not equal assertion two variable from memory": {
+        "prefix": "'#Previously-set-variable-name' from memory should not equal '#Previously-set-variable-name' from memory",
+        "body": [
+            "Then \"${1:#previously-set-variable-name}\" from memory should not equal \"${1:#previously-set-variable-name}\" from memory"
+        ],
+        "description": "Checks that two parameters previously seted and stored in memory are not equal."
+    },
+    "select by index from dropdown": {
+        "prefix": "select '#indexNumber' index from '#selector' selector field",
+        "body": [
+            "When select \"${1:#indexNumber}\" index from \"${1:##selector}\" selector field"
+        ],
+        "description": "Selects an option by index from a specified dropdown menu using the given selector."
+    },
+    "switch frame to": {
+        "prefix": "switch frame to '#selector'",
+        "body": [
+            "When switch frame to \"${1:##selector}\""
+        ],
+        "description": "Switch to frame that given locator"
+    },
+    "switch to default content": {
+        "prefix": "switch to defult content",
+        "body": [
+            "When switch to defult content"
+        ],
+        "description": "focus to default content after switched frame"
+    },
+    "Close popup in shadow-root": {
+        "prefix": "close the popup if shadow root \"${1:##shadow-root-selector}\" and close icon \"${2:##closeIconSelector}\" exist",
+        "body": [
+            "When close the popup if shadow root \"${1:##shadow-root-selector}\" and close icon \"${2:##closeIconSelector}\" exist"
+        ],
+        "description": "If a pop-up appears within SHADOW ROOT on the page, you can close the pop-up by providing the shadow-root's selector as the first parameter and the close icon's selector as the second parameter."
+    },
+    "Make element visible": {
+        "prefix": "make '#your-locator' element visible",
+        "body": [
+            "When make \"${1:##selector}\" element visible"
+        ],
+        "description": "If the element has an opacity: 0 attribute in its class, this function will make the element visible."
+    },
+    "Switch frame to iFrame": {
+        "prefix": "switch frame to '#iFrame-locator' selector field",
+        "body": [
+            "When switch frame to \"${1:##iFrame-locator}\" selector field"
+        ],
+        "description": "Switch frame to your iFrame with iFrame locator."
+    },
+    "Switch frame to Parent iFrame": {
+        "prefix": "switch frame to default content",
+        "body": [
+            "When switch frame to default content"
+        ],
+        "description": "Switch frame to Parent iFrame"
+    },
+}
