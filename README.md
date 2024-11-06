@@ -50,6 +50,7 @@ Random Category senaryomuzda jmeterda page variables içinde 9 farklı kategori 
 ## 
 Random search senaryomuzda da yine page variables içine 5 farklı search term girdim. Açık pozisyonlar sayfasındaki search için bir yük isteği oluşturdum. Burada da bir önceki senaryoda olduğu gibi kaç yük gönderirsek rastgele 5 farklı search term ile simüle etmiş oluyoruz.
 ## 
+Jmeter senaryolar ve variables - https://prnt.sc/Agpf0EwiggOR
 Homepage - https://prnt.sc/O7XUjaS0Pj8b
 Homepage -> Random Category - https://prnt.sc/XzUt5KtplEZi
 Homepage -> Random Position Search - https://prnt.sc/dMdfS9XDZUtX
