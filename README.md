@@ -37,8 +37,8 @@ Burada /libraries/language.json file içine ingilizce ve türkçe diller için 3
 ### Test Senaryosu - C
 Bu case için tamamen cucumber koduyla yönetilebilir bir mantık kurdum. Action with table adında bir tablo adımı ekledim projeye. Bir tablo ile tamamen BDD yaklaşımı ile yönetebileceğimiz bir senaryo oluştu. Sadece bu tabloyla type/click/assertion/scroll gibi işlemleri kolayca yapabiliyoruz. Locator sütununa işlem yapmak istediğimiz locator'ı giriyoruz. Fakat bu locator'ı /Objects/BasePageObject.js dosyasının içine tanımlıyoruz. Tablodaki locator kolonuna da burada tanımlı olan locator ismini giriyoruz. Action sütunu yapmak istediğimiz işlemi seçiyoruz. Value sütununda ise gerekli parametreleri giriyoruz. Böylece sadece ön yüzden yönetilebilir bir search/filtre test senaryosu oluşturmuş oldum.
 ## 
-![Test Senaryoları](https://prnt.sc/XRdu85bthrAi)
-![Test Sonuçları](https://prnt.sc/EmEAcSkt8FBN)
+https://prnt.sc/XRdu85bthrAi
+https://prnt.sc/EmEAcSkt8FBN
 
 ## 3. Jmeter Yük/Performans Testleri
 Jmeter projemi /jmeter_senaryolar/kariyer_baykar altında bulabilirsiniz. Testleri .bat dosyası ile koşup testin sonunda bir jmeter dashboard'da sonuç alabileceğimiz /log/index.html oluşturdum. Burada aldığım sonuçları resim olarak paylaşacağım.
@@ -50,6 +50,6 @@ Random Category senaryomuzda jmeterda page variables içinde 9 farklı kategori 
 ## 
 Random search senaryomuzda da yine page variables içine 5 farklı search term girdim. Açık pozisyonlar sayfasındaki search için bir yük isteği oluşturdum. Burada da bir önceki senaryoda olduğu gibi kaç yük gönderirsek rastgele 5 farklı search term ile simüle etmiş oluyoruz.
 ## 
-![Homepage](https://prnt.sc/O7XUjaS0Pj8b)
-![Homepage -> Random Category](https://prnt.sc/XzUt5KtplEZi)
-![Homepage -> Random Position Search](https://prnt.sc/dMdfS9XDZUtX)
+Homepage - https://prnt.sc/O7XUjaS0Pj8b
+Homepage -> Random Category - https://prnt.sc/XzUt5KtplEZi
+Homepage -> Random Position Search - https://prnt.sc/dMdfS9XDZUtX
